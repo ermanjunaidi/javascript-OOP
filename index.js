@@ -1,11 +1,8 @@
-function circle(radius) {
-    this.radius = radius
-    this.draw = function () {
-        console.log('draw')
-    }
+let obj = { value: 13 };
+
+function increase(obj) {
+    obj.value++
 }
 
-circle.call({}, 1)
-circle.apply({}, [1, 2, 3])
-
-const another = new circle(1)
+increase(obj)
+console.log(obj)
